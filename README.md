@@ -18,7 +18,8 @@ stored.
 
 ## PROGRAM - ARP
 ## 1.server.py
-```import socket
+```
+import socket
 s = socket.socket()
 s.bind(('localhost', 8000))
 s.listen(5)
@@ -34,7 +35,7 @@ while True:
         c.send("Not Found".encode())
 ```
 ## 2.client.py
-```5
+```
 import socket
 s = socket.socket()
 s.connect(('127.0.0.1', 8000))
